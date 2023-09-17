@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ignite-dev
+  labels:
+    app: ignite-dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ignite-dev
+  template:
+    metadata:
+      labels:
+        app: ignite-dev
+    spec:
+      containers:
+        - name: ignite-dev
+          image: obusorezekiel/node-web-app
+          ports:
+          - containerPort: 8080
