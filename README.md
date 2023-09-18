@@ -1,6 +1,4 @@
-### My Ignite.dev Submission ###
-
-## Task instructions for DevOps Intern Role
+# My Ignite.dev Submission #
 
 ### Setup a kubernetes cluster using kind 
 
